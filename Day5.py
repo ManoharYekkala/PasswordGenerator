@@ -9,8 +9,6 @@ nr_letters= int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 passwd = ""
-#Eazy Level - Order not randomised:
-#e.g. 4 letter, 2 symbol, 2 number = JduE&!91
 for letter in range(0,nr_letters):
     l = random.randint(0,26)
     passwd += " " + letters[l]
@@ -27,5 +25,3 @@ random.shuffle(list)
 for i in range(0,total_char):
     final_pass += list[i]
 print(f"Your uncrackable password is: {final_pass}")
-#Hard Level - Order of characters randomised:
-#e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
